@@ -771,3 +771,60 @@ body{
     line-height:1.4!important;
   }
 }
+
+
+/* Professional portrait frame — refined navy/ice-blue double border */
+.profile-photo{
+  position:relative!important;
+  box-sizing:border-box!important;
+  padding:5px!important;
+  overflow:hidden!important;
+  border:1px solid #b9cde5!important;
+  border-radius:11px!important;
+  outline:0!important;
+  background:linear-gradient(145deg,#fafdff 0%,#e4eefb 48%,#c9dcf3 100%)!important;
+  box-shadow:0 9px 22px rgba(28,65,109,.15),0 2px 5px rgba(28,65,109,.08),inset 0 1px 0 rgba(255,255,255,.95)!important;
+}
+.profile-photo:before{
+  content:""!important;
+  position:absolute!important;
+  z-index:2!important;
+  top:5px!important;
+  right:5px!important;
+  width:23px!important;
+  height:3px!important;
+  border-radius:4px!important;
+  background:linear-gradient(90deg,#8eb6e2,#2e68a8)!important;
+  pointer-events:none!important;
+}
+.profile-photo img{
+  position:relative!important;
+  z-index:1!important;
+  border:1px solid rgba(255,255,255,.9)!important;
+  border-radius:6px!important;
+  object-fit:cover!important;
+  object-position:center 22%!important;
+  box-shadow:0 1px 4px rgba(23,59,104,.12)!important;
+}
+@media(max-width:700px){
+  .profile-photo{
+    padding:4px!important;
+    border-radius:9px!important;
+    box-shadow:0 6px 15px rgba(28,65,109,.14),inset 0 1px 0 rgba(255,255,255,.95)!important;
+  }
+  .profile-photo:before{top:4px!important;right:4px!important;width:18px!important;height:2px!important}
+  .profile-photo img{border-radius:5px!important}
+}
+@media print{
+  .profile-photo{
+    padding:1.2mm!important;
+    border:0.35mm solid #b8cde6!important;
+    border-radius:2mm!important;
+    background:linear-gradient(145deg,#fafdff,#e6f0fc)!important;
+    box-shadow:0 1mm 2.5mm rgba(28,65,109,.12),inset 0 0 0 .35mm #fff!important;
+    -webkit-print-color-adjust:exact!important;
+    print-color-adjust:exact!important;
+  }
+  .profile-photo:before{top:1.2mm!important;right:1.2mm!important;width:5mm!important;height:.6mm!important}
+  .profile-photo img{border-radius:1mm!important}
+}

@@ -182,3 +182,19 @@ body{margin:0;background:radial-gradient(ellipse at 12% 5%,#dceaff 0,transparent
  .experience-project-grid .project-card>a{font-size:4.6pt;overflow-wrap:anywhere}
 }
 .link-arrow{display:none!important}
+
+
+/* Center social links and make the CV footer a direct link */
+.cv-links{text-align:center;justify-items:center}
+.cv-links a{justify-content:center;text-align:center;width:100%}
+.section-label:has(+.cv-links){justify-content:center;text-align:center}
+.resume-footer-link{margin-left:auto;color:var(--blue);font:700 8px 'DM Sans',Arial,sans-serif;letter-spacing:.025em;text-decoration:none;overflow-wrap:anywhere;text-align:right}
+.resume-footer-link:hover{text-decoration:underline}
+@media(max-width:700px){
+ .resume-footer-link{margin-left:0;text-align:center}
+}
+@media print{
+ .cv-links{justify-items:center}
+ .cv-links a{justify-content:center;text-align:center}
+ .resume-footer-link{font-size:5.8pt}
+}

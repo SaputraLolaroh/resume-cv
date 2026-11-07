@@ -317,3 +317,24 @@ body{margin:0;background:radial-gradient(ellipse at 12% 5%,#dceaff 0,transparent
     text-align:center!important;
   }
 }
+
+
+/* Remove the decorative flex line that was pushing section 05 title off-center */
+.section-label.social-heading:after{
+  display:none!important;
+  content:none!important;
+}
+.section-label.social-heading{
+  justify-content:center!important;
+  text-align:center!important;
+}
+@media print{
+  .section-label.social-heading:after{
+    display:none!important;
+    content:none!important;
+  }
+  .section-label.social-heading{
+    justify-content:center!important;
+    text-align:center!important;
+  }
+}

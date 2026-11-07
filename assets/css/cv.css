@@ -748,3 +748,26 @@ body{
   .resume-footer>span:first-child{text-align:left!important}
   .resume-footer-link{text-align:right!important}
 }
+
+
+/* Print timeline: move the vertical rule and markers into the date/detail gutter */
+@media print{
+  .experience-project-grid .timeline{
+    position:relative!important;
+  }
+  .experience-project-grid .timeline:before{
+    left:19mm!important;
+  }
+  .experience-project-grid .timeline-item{
+    grid-template-columns:18mm minmax(0,1fr)!important;
+    gap:4mm!important;
+  }
+  .experience-project-grid .timeline-item:before{
+    left:18.2mm!important;
+  }
+  .experience-project-grid .period{
+    padding-right:1mm!important;
+    font-size:5.1pt!important;
+    line-height:1.4!important;
+  }
+}

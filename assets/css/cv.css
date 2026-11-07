@@ -1237,3 +1237,15 @@ body{
     line-height:1.15!important;
   }
 }
+
+/* Anchor the contact footer to the bottom edge of the A4 print layout */
+@media print{
+  .resume-sheet{
+    display:flex!important;
+    flex-direction:column!important;
+  }
+  .resume-sheet>.resume-footer{
+    flex:0 0 auto!important;
+    margin-top:auto!important;
+  }
+}

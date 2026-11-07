@@ -209,3 +209,60 @@ body{margin:0;background:radial-gradient(ellipse at 12% 5%,#dceaff 0,transparent
 @media print{
   .resume-footer>span:nth-child(2){position:absolute;left:50%;transform:translateX(-50%);text-align:center;white-space:nowrap}
 }
+
+
+/* Education and projects: vertical stacks, consistently left-aligned */
+.education-section,
+.education-section .section-label,
+.education-list,
+.education-item,
+.education-item h3,
+.education-item p,
+.education-item>span,
+.experience-project-grid .projects,
+.experience-project-grid .projects .section-label,
+.experience-project-grid .project-list,
+.experience-project-grid .project-card,
+.experience-project-grid .project-card h3,
+.experience-project-grid .project-card p,
+.experience-project-grid .project-card>a {
+  text-align:left!important;
+}
+.education-section .section-label,
+.experience-project-grid .projects .section-label {
+  justify-content:flex-start!important;
+}
+.education-list,
+.experience-project-grid .project-list {
+  display:grid!important;
+  grid-template-columns:minmax(0,1fr)!important;
+  justify-items:stretch!important;
+  align-items:start!important;
+}
+.education-item,
+.experience-project-grid .project-card {
+  width:100%;
+  min-width:0;
+}
+.education-item h3,
+.education-item p,
+.experience-project-grid .project-card h3,
+.experience-project-grid .project-card p {
+  margin-left:0!important;
+  margin-right:0!important;
+}
+.experience-project-grid .project-card:last-child {
+  grid-column:auto!important;
+}
+@media print {
+  .education-list,
+  .experience-project-grid .project-list {
+    grid-template-columns:minmax(0,1fr)!important;
+  }
+  .education-section,
+  .education-item,
+  .experience-project-grid .projects,
+  .experience-project-grid .project-card {
+    text-align:left!important;
+  }
+}

@@ -1313,3 +1313,58 @@ body{
     print-color-adjust:exact;
   }
 }
+
+
+/* =========================================================
+   FINAL EDITORIAL POLISH — consistent hierarchy and rhythm
+   ========================================================= */
+:root{--navy:#102b50;--blue:#1e5fbd;--bright:#347fe0;--ink:#203b5d;--muted:#5d7592;--pale:#f0f6ff;--line:#d7e6f7;--accent:#45b9e8}
+.resume-sheet{color:#203b5d}
+.resume-header{align-items:center}
+.headline{color:#385b80!important;font-size:10.2px!important;font-weight:700!important;line-height:1.55!important}
+.contact-strip{align-items:center;justify-content:space-between;gap:7px 16px!important;font-weight:700}
+.contact-strip>span,.contact-strip>a{min-width:0;overflow-wrap:anywhere}
+.cv-section{min-width:0}
+.section-label{min-height:27px;padding-bottom:5px;border-bottom:1px solid #d9e7f7;font-size:9px!important;line-height:1.2}
+.section-label>span{flex:0 0 25px}
+.profile-section>p{padding:11px 12px;border:1px solid #dce9f8;border-left:3px solid #347fe0;border-radius:2px 8px 2px 8px;background:linear-gradient(115deg,#f1f7ff 0%,#fbfdff 72%,#f0f9fd 100%);color:#385573!important;font-size:9px!important;line-height:1.62!important;text-align:left!important}
+.education-item{padding:0 0 8px 10px!important;border-left:2px solid #c7ddf5}
+.education-item h3{font-size:9.5px!important;line-height:1.4!important}
+.education-item p{line-height:1.45}
+.timeline{gap:11px!important}
+.timeline-item{align-items:start}
+.timeline-item h3{font-size:9.6px!important;line-height:1.35!important}
+.timeline-item h4{font-size:8.5px!important}
+.timeline-item p:not(.job-location){color:#4c6480!important;font-size:8px!important;line-height:1.48!important}
+.period{font-size:7.1px!important;line-height:1.45!important;letter-spacing:.025em!important}
+.project-list{gap:7px!important}
+.project-card{display:flex;flex-direction:column;min-width:0;min-height:100%;padding:9px 10px!important}
+.project-index{font-size:6.6px!important;font-weight:800}
+.project-card h3{margin:3px 0 4px!important;font-size:10px!important}
+.project-card p{flex:1 1 auto;color:#4c6480!important;font-size:8px!important;line-height:1.5!important}
+.project-tags{display:flex;flex-wrap:wrap;gap:4px!important;margin-top:7px!important}
+.project-tags span{padding:3px 6px!important;border-radius:3px!important;font-size:6.5px!important;font-weight:700}
+.project-card>a{display:inline-block;margin-top:6px;font-size:7px!important;font-weight:800;overflow-wrap:anywhere}
+.cv-section:has(>.social-heading){padding:3mm 2.5mm 2.5mm!important;border:1px solid #d9e7f7;border-top:2px solid #347fe0;border-radius:2px 9px 2px 9px;background:linear-gradient(115deg,#f8fbff,#f0f7ff 55%,#f8fcff)}
+.social-heading{margin-bottom:2.5mm!important}
+.cv-links a{min-height:10mm!important;border-radius:2px 7px 2px 7px!important;font-size:7.1px!important;font-weight:800!important;letter-spacing:.005em}
+.resume-footer{border-top:2px solid #347fe0!important;color:#476687!important}
+@media(max-width:700px){
+ .headline{font-size:9px!important}.contact-strip{justify-content:flex-start}
+ .profile-section>p{padding:10px;font-size:10px!important;line-height:1.65!important}
+ .timeline{gap:14px!important}.timeline-item p:not(.job-location){font-size:9px!important}
+ .project-card{padding:11px 12px!important}.project-card p{font-size:9px!important}
+ .cv-section:has(>.social-heading){padding:12px!important}.cv-links a{min-height:46px!important;font-size:10px!important}
+}
+@media print{
+ .headline{font-size:6.2pt!important;line-height:1.35!important}.contact-strip{justify-content:space-between!important}
+ .profile-section>p{padding:1.5mm 1.8mm!important;font-size:5.9pt!important;line-height:1.35!important;border:.25mm solid #dce9f8!important;border-left:.7mm solid #347fe0!important;background:#f6f9fe!important}
+ .education-item{padding-left:1.5mm!important}.timeline{gap:1.1mm!important}
+ .timeline-item p:not(.job-location){font-size:5.2pt!important;line-height:1.23!important}
+ .project-card{padding:1mm 1.2mm!important}.project-card p{font-size:5.15pt!important;line-height:1.2!important}
+ .project-tags{gap:.7mm!important;margin-top:.5mm!important}.project-tags span{font-size:4.8pt!important;padding:.35mm .7mm!important}
+ .project-card>a{font-size:4.8pt!important;margin-top:.4mm!important}
+ .cv-section:has(>.social-heading){padding:1.2mm 2mm!important;border:.25mm solid #d9e7f7!important;border-top:.6mm solid #347fe0!important;background:#f7faff!important}
+ .social-heading{margin-bottom:1mm!important}.cv-links{grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:.8mm!important}
+ .cv-links a{min-height:7mm!important;padding:.7mm .8mm!important;font-size:5pt!important;line-height:1.1!important}
+}

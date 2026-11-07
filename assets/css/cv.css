@@ -599,3 +599,152 @@ body{
   }
   .resume-footer:before{display:none!important}
 }
+
+
+/* PRINT OVERLAP FIX — keep every section in normal document flow */
+@media print{
+  html,body{
+    width:210mm!important;
+    min-width:0!important;
+    height:auto!important;
+    overflow:visible!important;
+  }
+  .cv-page{
+    width:210mm!important;
+    max-width:none!important;
+    margin:0!important;
+    padding:0!important;
+    overflow:visible!important;
+  }
+  .resume-sheet{
+    display:block!important;
+    position:relative!important;
+    width:210mm!important;
+    height:auto!important;
+    min-height:297mm!important;
+    max-height:none!important;
+    margin:0!important;
+    padding:9mm 11mm 6mm!important;
+    overflow:visible!important;
+    box-sizing:border-box!important;
+  }
+  .resume-header,
+  .contact-strip,
+  .resume-body,
+  .main-column,
+  .intro-grid,
+  .experience-project-grid,
+  .cv-section,
+  .timeline,
+  .timeline-item,
+  .education-list,
+  .education-item,
+  .project-list,
+  .project-card,
+  .cv-links,
+  .resume-footer{
+    min-width:0!important;
+    max-width:100%!important;
+    box-sizing:border-box!important;
+  }
+  .resume-body-single{
+    display:block!important;
+    width:100%!important;
+    height:auto!important;
+    overflow:visible!important;
+  }
+  .main-column{
+    display:block!important;
+    width:100%!important;
+    height:auto!important;
+    overflow:visible!important;
+  }
+  .intro-grid{
+    display:grid!important;
+    grid-template-columns:minmax(0,1.6fr) minmax(0,.85fr)!important;
+    align-items:start!important;
+    gap:4mm!important;
+    margin:0 0 2.7mm!important;
+  }
+  .experience-project-grid{
+    display:grid!important;
+    grid-template-columns:minmax(0,1.6fr) minmax(0,.85fr)!important;
+    align-items:start!important;
+    gap:4mm!important;
+    height:auto!important;
+    overflow:visible!important;
+  }
+  .experience-project-grid>.cv-section,
+  .intro-grid>.cv-section{
+    min-width:0!important;
+    height:auto!important;
+    overflow:visible!important;
+  }
+  .timeline-item,
+  .education-item,
+  .project-card,
+  .cv-section{
+    break-inside:avoid!important;
+    page-break-inside:avoid!important;
+  }
+  .timeline-item{
+    grid-template-columns:19mm minmax(0,1fr)!important;
+    gap:3mm!important;
+  }
+  .timeline-item>div:last-child,
+  .project-card,
+  .education-item{
+    overflow-wrap:anywhere!important;
+    word-break:normal!important;
+  }
+  .project-card>a,
+  .cv-links a,
+  .resume-footer-link{
+    overflow-wrap:anywhere!important;
+    word-break:break-word!important;
+  }
+  .resume-sheet>.cv-section:has(.cv-links){
+    display:block!important;
+    margin:3mm 0 0!important;
+    padding:2mm 3mm 1.5mm!important;
+    flex:initial!important;
+    break-inside:avoid!important;
+    page-break-inside:avoid!important;
+  }
+  .resume-sheet>.cv-section:has(.cv-links) .cv-links{
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:1.2mm 4mm!important;
+    margin:0!important;
+  }
+  .resume-footer{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr) minmax(0,1.8fr) minmax(0,1fr)!important;
+    align-items:center!important;
+    justify-content:initial!important;
+    gap:2mm!important;
+    position:static!important;
+    height:auto!important;
+    margin:2mm 0 0!important;
+    padding:2mm 0 0!important;
+    break-inside:avoid!important;
+    page-break-inside:avoid!important;
+  }
+  .resume-footer>span,
+  .resume-footer>span:nth-child(2),
+  .resume-footer-link{
+    position:static!important;
+    inset:auto!important;
+    transform:none!important;
+    display:block!important;
+    width:auto!important;
+    min-width:0!important;
+    margin:0!important;
+    white-space:normal!important;
+    text-align:center!important;
+    line-height:1.35!important;
+    overflow-wrap:anywhere!important;
+  }
+  .resume-footer>span:first-child{text-align:left!important}
+  .resume-footer-link{text-align:right!important}
+}

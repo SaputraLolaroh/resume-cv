@@ -360,3 +360,179 @@ body{margin:0;background:radial-gradient(ellipse at 12% 5%,#dceaff 0,transparent
     margin-top:1.5mm!important;
   }
 }
+
+
+/* Calm blue atmosphere — screen and printed A4 refinement */
+:root{
+  --navy:#173b68;
+  --blue:#2d67ad;
+  --bright:#5792d2;
+  --ink:#2d4260;
+  --muted:#687f9d;
+  --pale:#eef5ff;
+  --line:#d9e6f6;
+  --accent:#a9c9ee;
+}
+html{
+  background:
+    radial-gradient(ellipse at 8% 12%,rgba(177,211,250,.58),transparent 38%),
+    radial-gradient(ellipse at 92% 46%,rgba(196,218,247,.48),transparent 36%),
+    linear-gradient(145deg,#f4f8ff 0%,#eaf2fc 48%,#f5f8fd 100%);
+}
+body{
+  background:
+    radial-gradient(ellipse at 13% 8%,rgba(183,213,249,.62) 0%,transparent 34%),
+    radial-gradient(ellipse at 88% 23%,rgba(205,224,249,.62) 0%,transparent 31%),
+    radial-gradient(ellipse at 52% 100%,rgba(218,232,250,.52) 0%,transparent 42%),
+    linear-gradient(135deg,#f4f8ff 0%,#eaf2fc 48%,#f7faff 100%);
+}
+.cv-nav{
+  position:relative;
+}
+.cv-brand{color:#1c416f}
+.brand-mark{
+  background:linear-gradient(145deg,#78a9df 0%,#3978c1 42%,#173b68 100%);
+  box-shadow:0 6px 16px rgba(39,91,151,.22),inset 0 1px 0 rgba(255,255,255,.38);
+}
+.cv-nav nav a{transition:color .2s ease}
+.print-button{
+  border-color:#326fb4;
+  background:linear-gradient(115deg,#5b94d2 0%,#2e68ac 52%,#1b4779 100%);
+  box-shadow:0 7px 17px rgba(37,91,151,.2),inset 0 1px 0 rgba(255,255,255,.24);
+}
+.resume-sheet{
+  background:
+    radial-gradient(ellipse at 0% 0%,rgba(224,238,255,.62) 0%,transparent 31%),
+    radial-gradient(ellipse at 100% 100%,rgba(230,240,253,.56) 0%,transparent 34%),
+    linear-gradient(145deg,#ffffff 0%,#fcfdff 46%,#f8fbff 100%);
+  border:1px solid #dce8f7;
+  box-shadow:0 22px 70px rgba(39,75,119,.16),0 3px 12px rgba(55,94,145,.06);
+}
+.resume-sheet:before{
+  width:58%;
+  height:8px;
+  background:linear-gradient(90deg,#d7e8fb 0%,#8eb9e8 24%,#4e8bcf 58%,#24578f 100%);
+}
+.resume-sheet:after{
+  border-color:#e0ebf8;
+  box-shadow:0 0 0 15px rgba(245,249,255,.82),0 0 0 16px #e8f0fa;
+}
+.resume-header{border-bottom-color:#8db4e1}
+.resume-header:after{background:linear-gradient(90deg,#9fc4ed,#3978bd)}
+.eyebrow{color:#628bbd}
+.identity h1{color:#183d6a}
+.identity h1 em{color:#3978bd}
+.headline b{color:#78a6d8}
+.contact-strip{
+  border-bottom-color:#d8e6f6;
+  background:linear-gradient(90deg,rgba(239,246,255,.64),rgba(255,255,255,0),rgba(239,246,255,.45));
+}
+.contact-strip .ui-icon{color:#3f7fc0}
+.section-label{color:#326eaf;border-bottom-color:#e2ecf8}
+.section-label>span{
+  background:linear-gradient(145deg,#f3f8ff 0%,#dceafd 100%);
+  color:#316bad;
+  box-shadow:inset 0 0 0 1px #cfe1f6,0 2px 5px rgba(48,102,164,.06);
+}
+.profile-section>p{color:#526985}
+.timeline:before{background:linear-gradient(180deg,#77a7dc 0%,#c5d9f0 55%,#e6eff9 100%)}
+.timeline-item:before{
+  border-color:#4f8bca;
+  box-shadow:0 0 0 3px #eaf3ff,0 1px 5px rgba(48,100,158,.14);
+}
+.period{color:#527eaf}
+.timeline-item h3,.project-list h3,.education-item h3,.skill-block h3{color:#1c416d}
+.timeline-item h4{color:#3978b9}
+.job-location{color:#7890ad}
+.project-card{
+  border-color:#dce9f8!important;
+  border-left-color:#6c9ed4!important;
+  background:linear-gradient(125deg,#f0f6ff 0%,#fbfdff 56%,#fff 100%)!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.9);
+}
+.project-card:nth-child(2){
+  border-left-color:#83acd8!important;
+  background:linear-gradient(125deg,#f4f8ff 0%,#fff 78%)!important;
+}
+.project-card:nth-child(3){
+  border-left-color:#3e78b7!important;
+  background:linear-gradient(125deg,#edf5ff 0%,#fbfdff 72%)!important;
+}
+.project-index{color:#7198c4}
+.project-tags span{
+  border-color:#d9e7f7;
+  background:linear-gradient(180deg,#fff,#f3f8ff);
+  color:#4e739f;
+}
+.project-card>a{color:#326fb4}
+.education-item{border-bottom-color:#e5edf7}
+.education-mode{
+  background:linear-gradient(90deg,#e8f2ff,#f4f8ff);
+  color:#356fae!important;
+}
+.education-item>span{color:#6c94c3}
+.link-list a{color:#3e70aa}
+.link-list a:hover{color:#1e4f87}
+.resume-footer{
+  border-top-color:#d9e6f5;
+  color:#7d95b5;
+}
+.resume-footer:before{background:linear-gradient(90deg,#8db7e5,#3c78b8)}
+.resume-footer strong{color:#2d68aa}
+.resume-footer-link{color:#2f6eaf}
+.page-note{color:#7890ad}
+.strength-grid>div{
+  border-color:#dce8f6;
+  background:linear-gradient(145deg,#eff6ff,#fff);
+}
+.strength-symbol{background:linear-gradient(145deg,#e6f1ff,#d6e7fb);color:#326eaf}
+.interest-list>div{
+  border-color:#dfeaf7;
+  background:linear-gradient(90deg,#eff6ff,#fff);
+}
+.development-note{border-left-color:#78a8dc;background:linear-gradient(90deg,#eff6ff,#f9fbff);color:#5e7694}
+
+@media(max-width:700px){
+  html,body{
+    background:
+      radial-gradient(ellipse at 0% 0%,rgba(184,213,249,.56),transparent 40%),
+      linear-gradient(145deg,#f3f8ff,#eaf2fc 58%,#f7faff);
+  }
+  .resume-sheet{
+    background:
+      radial-gradient(ellipse at 0% 0%,rgba(224,238,255,.56),transparent 32%),
+      linear-gradient(145deg,#fff,#f8fbff);
+    box-shadow:0 12px 38px rgba(39,75,119,.14);
+  }
+}
+
+/* Keep the printed sheet predominantly white, with only a quiet blue wash */
+@media print{
+  html,body{
+    background:#fff!important;
+    -webkit-print-color-adjust:exact!important;
+    print-color-adjust:exact!important;
+  }
+  .resume-sheet{
+    background:
+      radial-gradient(ellipse at 0% 0%,rgba(231,241,253,.72) 0%,transparent 32%),
+      radial-gradient(ellipse at 100% 100%,rgba(238,245,253,.68) 0%,transparent 34%),
+      linear-gradient(145deg,#fff 0%,#fff 52%,#fbfdff 100%)!important;
+    border:0!important;
+    box-shadow:none!important;
+  }
+  .resume-sheet:before{
+    background:linear-gradient(90deg,#d9e9fb 0%,#91b9e4 25%,#4f89c7 60%,#24578f 100%)!important;
+  }
+  .resume-header{border-bottom-color:#9bbce1}
+  .contact-strip{background:linear-gradient(90deg,rgba(241,247,255,.7),transparent,rgba(241,247,255,.5))}
+  .project-card{
+    background:linear-gradient(125deg,#f3f8ff 0%,#fff 82%)!important;
+    border-color:#dce8f6!important;
+  }
+  .project-card:nth-child(2){background:linear-gradient(125deg,#f6f9ff,#fff 82%)!important}
+  .project-card:nth-child(3){background:linear-gradient(125deg,#eff6ff,#fff 82%)!important}
+  .section-label>span{background:linear-gradient(145deg,#f2f7ff,#e0edfc)!important}
+  .education-mode{background:#edf4fd!important}
+  .resume-footer{border-top-color:#dce7f4}
+}

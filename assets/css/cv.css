@@ -266,3 +266,16 @@ body{margin:0;background:radial-gradient(ellipse at 12% 5%,#dceaff 0,transparent
     text-align:left!important;
   }
 }
+
+
+/* Align the Projects column directly beneath the Education column */
+@media(min-width:701px){
+  .experience-project-grid{
+    grid-template-columns:minmax(0,1.6fr) minmax(220px,.85fr)!important;
+  }
+}
+@media print{
+  .experience-project-grid{
+    grid-template-columns:minmax(0,1.6fr) minmax(0,.85fr)!important;
+  }
+}

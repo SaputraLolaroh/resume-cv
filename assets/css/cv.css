@@ -198,3 +198,14 @@ body{margin:0;background:radial-gradient(ellipse at 12% 5%,#dceaff 0,transparent
  .cv-links a{justify-content:center;text-align:center}
  .resume-footer-link{font-size:5.8pt}
 }
+
+
+/* Keep the collaboration message centered across the full CV page */
+.resume-footer{position:relative;justify-content:space-between}
+.resume-footer>span:nth-child(2){position:absolute;left:50%;transform:translateX(-50%);text-align:center;white-space:nowrap}
+@media(max-width:700px){
+  .resume-footer>span:nth-child(2){position:static;left:auto;transform:none;width:100%;text-align:center;white-space:normal;order:3}
+}
+@media print{
+  .resume-footer>span:nth-child(2){position:absolute;left:50%;transform:translateX(-50%);text-align:center;white-space:nowrap}
+}

@@ -536,3 +536,66 @@ body{
   .education-mode{background:#edf4fd!important}
   .resume-footer{border-top-color:#dce7f4}
 }
+
+
+/* Print harmony pass: one continuous, restrained ice-blue paper tone */
+@media print{
+  .resume-sheet{
+    background:linear-gradient(
+      180deg,
+      #edf5ff 0mm,
+      #f5f9ff 31mm,
+      #fbfdff 68mm,
+      #ffffff 132mm,
+      #ffffff 100%
+    )!important;
+    border:0!important;
+  }
+  .resume-sheet:after{display:none!important}
+  .resume-header{
+    background:linear-gradient(105deg,rgba(255,255,255,.56),rgba(255,255,255,.12));
+    border-bottom:1px solid #a9c7e8!important;
+  }
+  .contact-strip{
+    background:linear-gradient(90deg,rgba(226,239,255,.68),rgba(255,255,255,.26),rgba(226,239,255,.48))!important;
+    border-bottom-color:#d6e5f6!important;
+  }
+  .section-label{
+    border-bottom-color:#e0eaf7!important;
+  }
+  .section-label>span{
+    background:#e7f1fd!important;
+    box-shadow:inset 0 0 0 1px #d2e2f4!important;
+  }
+  .project-card,
+  .project-card:nth-child(2),
+  .project-card:nth-child(3){
+    background:#f5f9ff!important;
+    border:1px solid #dce8f6!important;
+    border-left:2px solid #7da8d7!important;
+    box-shadow:none!important;
+  }
+  .project-tags span{
+    background:#fff!important;
+    border-color:#dce7f4!important;
+  }
+  .education-mode{background:#eaf2fc!important}
+  .timeline:before{
+    background:linear-gradient(180deg,#7da9d8,#dbe7f5)!important;
+  }
+  .timeline-item:before{
+    background:#fff!important;
+    box-shadow:0 0 0 2px #edf4fc!important;
+  }
+  .cv-section:has(.cv-links){
+    padding:2mm 3mm 1.5mm;
+    background:linear-gradient(90deg,#f4f8fe,#edf4fd 50%,#f4f8fe);
+    border-top:1px solid #e1ebf7;
+  }
+  .resume-footer{
+    background:linear-gradient(90deg,#f2f7fd,#eaf2fc 50%,#f2f7fd);
+    border-top:1px solid #d8e5f4!important;
+    padding:2mm 3mm!important;
+  }
+  .resume-footer:before{display:none!important}
+}

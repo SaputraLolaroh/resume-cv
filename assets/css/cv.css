@@ -124,3 +124,13 @@ body{margin:0;background:radial-gradient(ellipse at 12% 5%,#dceaff 0,transparent
 
 /* Single-column CV layout */
 .resume-body-single{grid-template-columns:minmax(0,1fr)!important}
+
+/* Compact social and professional links */
+.cv-links{grid-template-columns:repeat(2,minmax(0,1fr));gap:5px 16px}
+.cv-links a{min-width:0}
+@media(max-width:700px){.cv-links{grid-template-columns:1fr}}
+@media print{
+ .cv-links{grid-template-columns:repeat(2,minmax(0,1fr));gap:1.2mm 4mm}
+ .cv-links a{font-size:5.8pt;line-height:1.25}
+ .cv-links .link-arrow{font-size:6pt}
+}

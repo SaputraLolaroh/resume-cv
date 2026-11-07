@@ -121,3 +121,6 @@ body{margin:0;background:radial-gradient(ellipse at 12% 5%,#dceaff 0,transparent
  .cv-section{margin-bottom:2.7mm}
  .section-label{padding-bottom:1mm}
 }
+
+/* Single-column CV layout */
+.resume-body-single{grid-template-columns:minmax(0,1fr)!important}

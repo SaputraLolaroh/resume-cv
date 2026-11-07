@@ -828,3 +828,48 @@ body{
   .profile-photo:before{top:1.2mm!important;right:1.2mm!important;width:5mm!important;height:.6mm!important}
   .profile-photo img{border-radius:1mm!important}
 }
+
+
+/* Clean portrait frame: remove the floating blue bar and any tinted square */
+.profile-photo{
+  padding:4px!important;
+  border:1px solid #b8cde3!important;
+  border-radius:9px!important;
+  outline:0!important;
+  background:#fff!important;
+  box-shadow:0 4px 12px rgba(28,65,109,.10)!important;
+}
+.profile-photo:before{
+  display:none!important;
+  content:none!important;
+}
+.profile-photo img{
+  display:block!important;
+  border:0!important;
+  border-radius:5px!important;
+  background:#fff!important;
+  box-shadow:none!important;
+  object-fit:cover!important;
+}
+@media(max-width:700px){
+  .profile-photo{padding:3px!important;border-radius:8px!important}
+  .profile-photo img{border-radius:4px!important}
+}
+@media print{
+  .profile-photo{
+    padding:1mm!important;
+    border:.3mm solid #b8cde3!important;
+    border-radius:1.5mm!important;
+    background:#fff!important;
+    box-shadow:none!important;
+    -webkit-print-color-adjust:exact!important;
+    print-color-adjust:exact!important;
+  }
+  .profile-photo:before{display:none!important;content:none!important}
+  .profile-photo img{
+    border:0!important;
+    border-radius:.7mm!important;
+    background:#fff!important;
+    box-shadow:none!important;
+  }
+}

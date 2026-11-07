@@ -279,3 +279,19 @@ body{margin:0;background:radial-gradient(ellipse at 12% 5%,#dceaff 0,transparent
     grid-template-columns:minmax(0,1.6fr) minmax(0,.85fr)!important;
   }
 }
+
+
+/* Center the complete section 05 heading across the page */
+.cv-section:has(.cv-links)>.section-label{
+  display:flex!important;
+  width:100%;
+  justify-content:center!important;
+  text-align:center!important;
+}
+@media print{
+  .cv-section:has(.cv-links)>.section-label{
+    width:100%;
+    justify-content:center!important;
+    text-align:center!important;
+  }
+}

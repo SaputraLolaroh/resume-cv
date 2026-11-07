@@ -338,3 +338,25 @@ body{margin:0;background:radial-gradient(ellipse at 12% 5%,#dceaff 0,transparent
     text-align:center!important;
   }
 }
+
+
+/* Print: anchor section 05 and the footer near the bottom edge of the A4 sheet */
+@media print{
+  .resume-sheet{
+    display:flex!important;
+    flex-direction:column!important;
+    padding-bottom:2.5mm!important;
+  }
+  .resume-sheet>.cv-section:has(.cv-links){
+    margin-top:auto!important;
+    margin-bottom:2mm!important;
+    flex:0 0 auto!important;
+  }
+  .resume-sheet>.cv-section:has(.cv-links) .cv-links{
+    row-gap:1.2mm!important;
+  }
+  .resume-sheet>.resume-footer{
+    flex:0 0 auto!important;
+    margin-top:1.5mm!important;
+  }
+}

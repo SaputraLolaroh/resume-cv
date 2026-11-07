@@ -295,3 +295,25 @@ body{margin:0;background:radial-gradient(ellipse at 12% 5%,#dceaff 0,transparent
     text-align:center!important;
   }
 }
+
+
+/* Explicit centering for section 05 across the full printable content width */
+.social-heading{
+  display:flex!important;
+  width:100%!important;
+  box-sizing:border-box!important;
+  justify-content:center!important;
+  align-items:center!important;
+  text-align:center!important;
+  margin-left:0!important;
+  margin-right:0!important;
+}
+.social-heading>span{flex:0 0 22px}
+@media print{
+  .social-heading{
+    display:flex!important;
+    width:100%!important;
+    justify-content:center!important;
+    text-align:center!important;
+  }
+}
